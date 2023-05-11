@@ -1,0 +1,47 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 10px;
+	padding: 10px;
+	background-color: #f2f2f2;
+}
+
+h1 {
+	text-align: center;
+	margin-top: 50px;
+	color: #333;
+}
+
+form {
+	max-width: 500px;
+	margin: 0 auto;
+	padding: 20px;
+	background: linear-gradient(to bottom right, #bcf7f6, #d2f5dd);
+	box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+label {
+	display: block;
+	margin-top: 20px;
+	color: #333;
+}
+
+input[type=text], input[type=number], input[type=email], input[type=password] {
+	display: block;
+	width: 95%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: 16px;
+	margin-top: 5px;
+}
+
+input[type=submit] {
+	background-color: #4CAF50;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+	cursor: pointer;
+	margin-top: 20px;
+}

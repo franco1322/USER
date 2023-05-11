@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Datos enviados</title>
+    <link rel="icon" href="grupo-de-estudio.png">
+	<link rel="stylesheet" href="card.css">
+</head>
+<body>
+    <div id="mensaje">
+	<h1>Datos enviados</h1>
+    </div>
+    <div id="contenedor"></div>
+    <img class="imagen" src="images.png"
+     alt="foto de un alumno">
+	<table>
+		<tr>
+			<td><strong>Nombre:</strong></td>
+			<td id="nombre"></td>
+		</tr>
+		<tr>
+			<td><strong>Apellidos:</strong></td>
+			<td id="apellidos"></td>
+		</tr>
+		<tr>
+			<td><strong>Edad:</strong></td>
+			<td id="edad"></td>
+		</tr>
+		<tr>
+			<td><strong>Correo electrónico:</strong></td>
+			<td id="correo"></td>
+		</tr>
+		
+	</table>
+    </div>
+	<script>
+		const formData = JSON.parse(localStorage.getItem("formData"));
+		document.getElementById("nombre").innerText = formData.nombre;
+		document.getElementById("apellidos").innerText = formData.apellidos;
+		document.getElementById("edad").innerText = formData.edad;
+		document.getElementById("correo").innerText = formData.correo;
+		document.getElementById("contraseña").innerText = formData.contraseña;
+		localStorage.removeItem("formData");
+	</script>
+</body>
+</html>
+
